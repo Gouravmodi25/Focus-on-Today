@@ -8,6 +8,7 @@ body {
 }
 main {
   padding: 0 16px 32px;
+  height: 810px;
 }
 
 .heading {
@@ -49,6 +50,7 @@ main {
   font-weight: 400;
   color: #858585;
   margin-bottom: 20px;
+  transition: 0.05s ease;
 }
 .container .bar {
   border-radius: 15px;
@@ -75,11 +77,12 @@ main {
   color: white;
   display: flex;
   align-items: center;
-
+  transition: width 0.4s ease-in-out;
   overflow: hidden;
 }
-.progress-value span {
+.progress-value p {
   padding-left: 20px;
+  min-width: max-content;
 }
 .goal-container {
   height: 82px;
@@ -144,7 +147,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: 0.5s ease;
+  transition: 1s ease;
   cursor: pointer;
 }
 .completed .check-icon {
